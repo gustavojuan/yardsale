@@ -24,10 +24,13 @@ body {
   place-items: center;
 }
 
-.form-container {
+.form-container, .message-container {
   display: grid;
   grid-template-rows: auto 1fr auto;
   width: 300px;
+  
+}
+.message-container{
   justify-items: center;
 }
 
@@ -97,9 +100,20 @@ body {
   margin-bottom: 12px;
 }
 
+.input-email {
+  margin-bottom: 22px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
+}
+.form a {
+  color: var(--hospital-green);
+  text-decoration: none;
+  font-size: var(--sm );
+  text-align: center;
+  margin-bottom: 54px;
 }
 
 .primary-button {
@@ -113,6 +127,19 @@ body {
   font-weight: bold;
   height: 54px;
 }
+
+.secondary-button {
+  border:1px solid var(--hospital-green);
+  color: var(--hospital-green);
+  border-radius: 8px;
+  background-color: var(--white);  
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 54px;
+
+}
 .login-button {
   margin-top: 14px;
   margin-bottom: 32px;
@@ -122,5 +149,15 @@ body {
 @media (max-width:768px) {
     .logo {
         display: block;
+    }
+    .secondary-button{
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      right: 0;
+      max-width: 300px;
+      
+      display: block;
+      margin: 0 auto;
     }
 }
