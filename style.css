@@ -107,6 +107,12 @@ body {
   margin-bottom: 22px;
 }
 
+p.value {
+  color:var(--very-light-pink);
+  font-size: var(--md);
+  margin-bottom: 8px 0 22px 0;
+}
+
 .form {
   display: flex;
   flex-direction: column;
